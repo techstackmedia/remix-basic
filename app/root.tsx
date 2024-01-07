@@ -7,6 +7,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import appStylesHref from "./app.css";
+
 export default function App() {
   return (
     <html lang="en">
@@ -15,6 +17,7 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <link rel="stylesheet" href={appStylesHref} />
       </head>
       <body>
         <div id="sidebar">
